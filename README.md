@@ -27,7 +27,7 @@ Based on the given user story, the timed quiz is used to show learned JavaScript
 
 <img width="817" alt="coding quiz challenge" src="https://user-images.githubusercontent.com/119267074/211990144-e4f8b929-45c0-4b4a-8c58-7b4b01a9782a.png">
 
-### SKILL USED
+### SKILLS 
 
 * HTML
 * Advanced CSS
@@ -35,4 +35,4 @@ Based on the given user story, the timed quiz is used to show learned JavaScript
    * Events
    * Timers
    * Intervals
-* 
+
