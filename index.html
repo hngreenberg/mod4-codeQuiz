@@ -1,1 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Font -->
+    <script src></script> 
 
+ <!-- CSS -->
+<link rel="stylesheet" href=".assets/css/style.css"
+
+
+<title>JavaScript Quiz</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="highscores.html">View Highscores</a>
+            <p id="timer">Time:0</p>
+        </nav>
+    </header>
+    <main> 
+        
+            <h1>Coding Quiz Challenge</h1>
+            <p>Test your JavaScript knowledge with this quiz challenge!</p>
+            <p>
+                You have  <strong>60 seconds</strong> to answer <strong>5 questions.</strong>
+                Each time you get and answer wrong, <strong>10 seconds</strong> gets deducted from your time. 
+            </p>
+                <button id="btn-=begin">Begin Quiz</button>
+            <section id="quiz">
+            <h1 id="questions">Quiz Questions</h1>
+            <ul id="answers"></ul>
+            </section>
+            <section id="end">
+                <h1 id="complete">End of quiz</h1>
+                <p id="yourscore">Your Score is: <span id="score">0</span></p>
+                <form id="submit">
+                    <label for="initials">Enter your initials:</label>
+                    <input type="text" id="initials">
+                    <button type="btn-submit">Submit</button>
+                    <p id="error"></p>
+                </form>
+                <a href="index.html">Back to Quiz</a>
+            </section>
+            <div>
+                <p id="correct">CORRECT!</p>
+                <p id="wrong">WRONG!</p>
+            </div>
+            </p>
+    </main>
+    <script src=".assets/js/js.scripts"></script>
+</body>
+</html>
