@@ -1,55 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<!-- Font -->
-    <script src></script> 
-
- <!-- CSS -->
-<link rel="stylesheet" href=".assets/css/style.css"
-
-
-<title>JavaScript Quiz</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="text/css" href="./resources/css/normalize.css"> -->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <title>Coding Quiz</title>
 </head>
+
 <body>
-    <header>
-        <nav>
-            <a href="highscores.html">View Highscores</a>
-            <p id="timer">Time:0</p>
-        </nav>
-    </header>
-    <main> 
-        
-            <h1>Coding Quiz Challenge</h1>
-            <p>Test your JavaScript knowledge with this quiz challenge!</p>
-            <p>
-                You have  <strong>60 seconds</strong> to answer <strong>5 questions.</strong>
-                Each time you get and answer wrong, <strong>10 seconds</strong> gets deducted from your time. 
-            </p>
-                <button id="btn-=begin">Begin Quiz</button>
-            <section id="quiz">
-            <h1 id="questions">Quiz Questions</h1>
-            <ul id="answers"></ul>
-            </section>
-            <section id="end">
-                <h1 id="complete">End of quiz</h1>
-                <p id="yourscore">Your Score is: <span id="score">0</span></p>
-                <form id="submit">
-                    <label for="initials">Enter your initials:</label>
-                    <input type="text" id="initials">
-                    <button type="btn-submit">Submit</button>
-                    <p id="error"></p>
-                </form>
-                <a href="index.html">Back to Quiz</a>
-            </section>
-            <div>
-                <p id="correct">CORRECT!</p>
-                <p id="wrong">WRONG!</p>
+    <div class="container">
+        <!-- Top fixed header (highscores and timer) -->
+        <header class="row">
+            <div class="col-md-6" id="Highscores">
+                <a href="./Scores.html">View Highscores</a>
             </div>
-            </p>
-    </main>
-    <script src=".assets/js/js.scripts"></script>
+            <div class="col-md-6" id="timer">
+                Time: <span id="time">0</span>
+            </div>
+
+        </header>
+
+        <!-- Coding Challenge Title -->
+        <section id="title-section" class="show">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1>Coding Quiz Challenge</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <p>Try and answer the following code-related questions within the time limit. Keep in mind that
+                        incorrect answers will penalize your your score time by 10 seconds!</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <button id="startButton">Start Quiz</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Coding questions -->
+        <section id="quiz-section" class="hide">
+            <div class="row">
+                <div class="col-md-12 questions">
+                    <h3 id="question-title"></h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12" id="choices"></div>
+                <div id="feedback" class="feedback hide"></div>
+            </div>
+        </section>
+
+        <!-- High Score section -->
+        <section id="highscore-section" class="hide">
+            <div class="row">
+                <div id="high-score" class="col-md-12">
+                    <h2>All done!</h2>
+                    <h3>Your final score is <span id="final-score">0</span></h3>
+                    <label for="initials-area">Enter initials:</label>
+                    <input type="text" name="initials-area" maxlength="4" id="initials">
+                    <button id="submit-button" type="submit">Submit</button>
+                </div>
+            </div>
+        </section>
+
+        <script type="text/javascript" src="assets/js/questions.js"></script>
+        <script type="text/javascript" src="assets/js/scripts.js"></script>
+        <script type="text/javascript" src="assets/js/scores.js"></script>
+
 </body>
+
 </html>
