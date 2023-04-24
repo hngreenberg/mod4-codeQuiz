@@ -1,26 +1,26 @@
 var questions = [
   {
-      title: "Commonly Used data types DO NOT include:",
-      choices: ["stings", "alerts", "booleans", "numbers"],
-      answer: "alerts"
+      title: "What changes the styling of the page?",
+      choices: ["HTML", "PAINT", "JAVA", "CSS"],
+      answer: "CSS"
   },
   {
-      title: "The condition in an if / else statment is enclosed within _____.",
-      choices: ["parentheses", "quotes", "curly brackets", "square brackets"],
-      answer: "parentheses"
+      title: "What HTML tag allows you to create unordered list items?",
+      choices: ["ol", "ul", "item", "list"],
+      answer: "ul"
   },
   {
-      title: "What javascipt method can we use to select an html element?",
-      choices: ["document.queryselector()", "document.getElementChild", "document.getElementById", "Both 1 and 3"],
-      answer: "Both 1 and 3"
+      title: "What does .js stand for at the end of a file name? ",
+      choices: ["Jelly Sandwich", "JavaScribe", "Javascript", "JavaScan"],
+      answer: "Javascript"
   },
   {
-      title: "What html tag is NOT included in the HEAD tag?",
-      choices: ["link", "meta", "title", "header"],
-      answer: "header"
+      title: "What is the name of the group of properties that allows you to control the height and width of elements??",
+      choices: ["block", "box", "size", "header"],
+      answer: "size"
   },
   {
-      title: "What attribute is used in html to decorate content?",
-      choices: ["css", "class", "src", "style"],
-      answer: "style"
+      title: "What is the name of the statement that is used to exit or end a loop in Javascript ?",
+      choices: ["close statement", "end statement", "conditional statement", "break statement"],
+      answer: "break statement"
   }]
